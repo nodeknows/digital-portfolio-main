@@ -1,0 +1,33 @@
+.intro {
+    background-color: #FEFAE0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.intro > div {
+    overflow-x: hidden;
+    transition: all 1.5s
+}
+
+.intro > div > h1 {
+    font-family: creation;
+    font-size: 10vmax;
+}
+
+.intro > h2 {
+    font-family: code;
+    font-size: 1vmax ;
+
+    transition: all 0.5s;
+
+    opacity: 0;
+}
+
+/*  */
