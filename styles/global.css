@@ -32,6 +32,11 @@ Dark Tan:
     src: url('/fonts/unicode-00xx-square.ttf');
 }
 
+@font-face {
+    font-family: megan;
+    src: url('/fonts/MegandemofontRegular-axGea.otf');
+}
+
 .not-selectable {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
