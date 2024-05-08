@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .intro {
   width: 100vw;
   height: 100vh;
@@ -48,7 +52,6 @@
 }
 
 .body {
-  opacity: 0;
   width: 100vw;
   display: flex;
   flex-flow: column wrap;
@@ -70,6 +73,107 @@
 .body div {
   background-image: url('../imgs/wrestling.png');
   height: 250px;
-  width: 100vw;
+  width: 100%;
+  max-width: 1000px;
   background-attachment: fixed;
+  background-size: cover;
+  background-position: center 20%;
+}
+
+/*  */
+
+.worked {
+  width: 100%;
+
+  /* display: flex; */
+  display: none;
+  
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+
+  padding: 0 50px 50px 50px
+}
+
+.worked h1 {
+  margin-top: 50px;
+  max-width: 1000px;
+
+  font-size: 200%;
+  font-family: code;
+  text-align: center;
+}
+
+.worked div {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.worked>div div {
+  width: 100%;
+  aspect-ratio: 1/1;
+  max-width: 450px;
+
+  background-color: white;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  border-radius: 50px;
+
+  -webkit-box-shadow: 8px 8px 20px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 8px 20px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 8px 8px 20px -11px rgba(0, 0, 0, 0.75);
+}
+
+.worked > div div:hover {
+  filter: brightness(50%)
+}
+
+.worked>div:nth-of-type(1)>div:nth-of-type(1) {
+  background-image: url('../imgs/fbhc.png')
+}
+
+.worked>div:nth-of-type(1)>div:nth-of-type(2) {
+  background-image: url('../imgs/cart.png')
+}
+
+.worked>div:nth-of-type(2)>div:nth-of-type(1) {
+  background-image: url('../imgs/fs.webp')
+}
+
+.worked>div:nth-of-type(2)>div:nth-of-type(2) {
+  background-image: url('../imgs/peer.webp')
+}
+
+@keyframes wipe-in-top-right {
+  from {
+    clip-path: polygon(-50% 50%, 50% 150%, 50% 150%, -50% 50%);
+  }
+  to {
+    clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+  }
+}
+
+[transition-style="in:wipe:top-right"] {
+  animation: .5s cubic-bezier(.25, 1, .30, 1) wipe-in-top-right both;
+}
+
+@keyframes wipe-in-top-left {
+  from {
+    clip-path: polygon(150% 50%, 150% 50%, 50% 150%, 50% 150%);
+  }
+  to {
+    clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+  }
+}
+
+[transition-style="in:wipe:top-left"] {
+  animation: .5s cubic-bezier(.25, 1, .30, 1) wipe-in-top-left both;
 }
