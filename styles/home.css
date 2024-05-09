@@ -132,7 +132,7 @@ body {
   box-shadow: 8px 8px 20px -11px rgba(0, 0, 0, 0.75);
 }
 
-.worked > div div:hover {
+.worked > div div:active {
   filter: brightness(50%)
 }
 
@@ -176,4 +176,8 @@ body {
 
 [transition-style="in:wipe:top-left"] {
   animation: .5s cubic-bezier(.25, 1, .30, 1) wipe-in-top-left both;
+}
+
+@media screen {
+  
 }

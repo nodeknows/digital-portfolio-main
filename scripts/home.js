@@ -16,9 +16,11 @@ let p2 = document.querySelector('.body p:nth-of-type(2)')
 
 let worked = document.querySelector('.worked')
 
-async function init() {
+window.onbeforeunload = function () {
     window.scrollTo(0, 0);
+}
 
+async function init() {
     yangs.style.animationDelay = '.5s'
     portfolio.style.animationDelay = '1s'
 
@@ -28,15 +30,15 @@ async function init() {
 
     p1.style.animationDelay = '3500ms'
     p1.setAttribute('transition-style', 'in:wipe:top-left')
-    
+
 
     bodyDiv.style.animationDelay = '4000ms'
     bodyDiv.setAttribute('transition-style', 'in:wipe:top-right')
-   
+
 
     p2.style.animationDelay = '4500ms'
     p2.setAttribute('transition-style', 'in:wipe:top-left')
-    
+
 
     intro.style.transition = 'all 1s'
 
@@ -51,7 +53,7 @@ async function init() {
     evan.style.paddingTop = '40px'
 
     await delay(1000)
-    
+
     evan.style.maxWidth = '250px'
     yangs.style.maxWidth = '250px'
     portfolio.style.maxWidth = '250px'
@@ -64,5 +66,17 @@ async function init() {
     trueBody.style.overflowY = 'visible'
 }
 
+
 init()
 
+var md = new MobileDetect(window.navigator.userAgent);
+console.log(md.mobile());          // 'Sony'
+console.log(md.phone());           // 'Sony'
+console.log(md.tablet());          // null
+console.log(md.userAgent());       // 'Safari'
+console.log(md.os());              // 'AndroidOS'
+console.log(md.is('iPhone'));      // false
+console.log(md.is('bot'));         // false
+console.log(md.version('Webkit'));         // 534.3
+console.log(md.versionStr('Build'));       // '4.1.A.0.562'
+console.log(md.match('playstation|xbox')); // false
