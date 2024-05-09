@@ -81,6 +81,50 @@ body {
     font-size: 150%;
 }
 
+.mobile > #hamburger {
+    height: 50px;
+
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.mobile > #hamburger > div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+}
+
+#frame {
+    position: absolute;
+    background-color: black;
+    z-index: 2;
+    opacity: 0.75;
+
+    width: 100vw;
+    height: 100vh;
+    color: #606C38;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 250%;
+}
+
+#frame a:link {
+    text-decoration: none;
+}
+
+/*  */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -95,4 +139,17 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #BC6C25;
+}
+
+/*  */
+@media (max-width: 650px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media (width >= 650px) {
+    .mobile {
+        display: none;
+    }
 }

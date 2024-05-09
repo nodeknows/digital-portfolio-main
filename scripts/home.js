@@ -80,3 +80,6 @@ console.log(md.is('bot'));         // false
 console.log(md.version('Webkit'));         // 534.3
 console.log(md.versionStr('Build'));       // '4.1.A.0.562'
 console.log(md.match('playstation|xbox')); // false
+
+let mobile = document.querySelector('.mobile')
+let 
