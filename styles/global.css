@@ -102,25 +102,45 @@ body {
 }
 
 #frame {
-    position: absolute;
-    background-color: black;
+    position: fixed;
+    background-color: #BC6C25;
     z-index: 2;
     opacity: 0.75;
 
     width: 100vw;
     height: 100vh;
-    color: #606C38;
     
-    display: flex;
+    display: none;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     gap: 50px;
     font-size: 250%;
+
+    transition: transform 1s;
 }
 
-#frame a:link {
+#frame a {
+    font-family: code;
     text-decoration: none;
+}
+
+#frame a:link, #frame a:visited {
+    color: #FEFAE0;
+}
+
+#frame > #exit {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    color: #283618;
+    font-size: 150%;
+    padding: 5px 10px 0 10px;
+    font-family: megan;
+}
+
+#frame > #exit:active {
+    color: white;
 }
 
 /*  */
