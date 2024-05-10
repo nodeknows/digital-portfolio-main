@@ -24,17 +24,17 @@ Dark Tan:
 
 @font-face {
     font-family: creation;
-    src: url('/fonts/Creattion Demo.otf');
+    src: url('/fnts/Creattion Demo.otf');
 }
 
 @font-face {
     font-family: code;
-    src: url('/fonts/unicode-00xx-square.ttf');
+    src: url('/fnts/unicode-00xx-square.ttf');
 }
 
 @font-face {
     font-family: megan;
-    src: url('/fonts/MegandemofontRegular-axGea.otf');
+    src: url('/fnts/MegandemofontRegular-axGea.otf');
 }
 
 .not-selectable {

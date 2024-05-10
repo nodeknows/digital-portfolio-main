@@ -1,0 +1,135 @@
+body {
+    color: #283618;
+    font-family: megan;
+    overflow-x: hidden;
+}
+
+body>h1 {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0 15px 0;
+    font-family: megan;
+}
+
+/*  */
+
+#btnDiv {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+/*  */
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#background {
+    background-color: white;
+    width: 100%;
+    max-width: 1000px
+}
+
+#top {
+    background-color: #ffbd59;
+    display: flex;
+    justify-content: center;
+}
+
+#top section {
+    flex-basis: 50%;
+    display: flex;
+}
+
+#selfie {
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    right: 5vw;
+    top: 7.5vh;
+}
+
+#title {
+    color: white;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+
+#selfie div {
+    width: 100%;
+    max-width: 225px;
+    aspect-ratio: 1/1;
+    background-image: url(../imgs/selfie.webp);
+    background-position: center 45%;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+h2 {
+    font-size: 250%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+h4 {
+    font-size: 100%;
+}
+
+/*  */
+
+.line {
+    width: 75px;
+    height: 2px;
+    background-color: #ffbd59;
+    margin-bottom: 15px;
+}
+
+#main {
+    display: flex;
+    font-size: 75%;
+    padding: 3%;
+}
+
+h5 {
+    font-size: 200%;
+}
+
+#left, #right {
+    padding-top: 7vh;
+    display: flex;
+    align-items: end;
+    flex-flow: column;
+    flex-basis: 50%;
+}
+
+#left section, #right section {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 1vh;
+}
+
+#contact {
+    display: flex;
+    flex-flow: column;
+}
+
+#contact > section {
+    display: flex;
+    gap: .5vw;
+}
+
+#contact > section img {
+    max-width: 15px;
+}
+
+#achievements div {
+    display: flex;
+    gap: 25px;
+}
