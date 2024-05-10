@@ -1,0 +1,130 @@
+body {
+    color: #283618;
+    font-family: megan;
+    overflow-x: hidden;
+}
+
+body>h1 {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0 0 0;
+    font-family: megan;
+}
+
+/*  */
+
+#funfact {
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 0 25px 0 25px;
+}
+
+#funfact div {
+    background-color: #BC6C25;
+    width: 2px;
+    opacity: 0.5;
+}
+
+#funfact div:nth-of-type(1) {
+    height: 100px;
+}
+
+#funfact div:nth-of-type(2) {
+    height: 250px;
+}
+
+#funfact p {
+    max-width: 350px;
+}
+
+/*  */
+
+#form {
+    padding: 0 25px 0 25px;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 25px;
+}
+
+.split {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 650px;
+}
+
+.split div {
+    width: 45%;
+    max-width: 300px;
+}
+
+.split div h3,
+.split div input {
+    width: 100%;
+    height: 35px;
+}
+
+.split div input {
+    background-color: #DDA15E;
+    color: #FEFAE0;
+    border: 2px solid #283618;
+}
+
+.wide {
+    width: 100%;
+    max-width: 650px;
+}
+
+.wide h3,
+.wide input,
+.wide textarea {
+    width: 100%;
+}
+
+.wide input {
+    background-color: #DDA15E;
+    color: #FEFAE0;
+    border: 2px solid #283618;
+    height: 35px;
+}
+
+.large textarea {
+    background-color: #DDA15E;
+    color: #FEFAE0;
+    border: 2px solid #283618;
+    height: 250px;
+    max-width: 650px;
+    max-height: 500px;
+    text-align: start;
+}
+
+button {
+    border: 5px solid #DDA15E;
+    border-radius: 25px;
+    background-color: #BC6C25;
+    color: #FEFAE0;
+    margin-bottom: 35px;
+    font-family: code;
+    transition: all .25s;
+
+    padding-bottom: 5px;
+
+    height: 50px;
+    width: 150px;
+}
+
+button:hover {
+    color: #FEFAE0;
+    background-color: #606C38;
+    border: 5px solid #283618;
+}

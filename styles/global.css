@@ -109,6 +109,7 @@ body {
 
     width: 100vw;
     height: 100vh;
+    top: 0;
     
     display: none;
     flex-flow: column wrap;

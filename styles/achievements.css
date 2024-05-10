@@ -9,8 +9,8 @@ body > h1 {
     font-family: megan;
 }
 
-body section {
-    width: 100;
+.main {
+    width: 100%;
     max-width: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -20,7 +20,7 @@ body section {
     margin-bottom: 50px;
 }
 
-body section > div {
+.main > div {
     width: 100%;
     max-width: 1000px;
     background-size: cover;
@@ -43,7 +43,7 @@ body section > div {
 
 /*  */
 
-body section a {
+.main a {
     background-color: #DDA15E;
     height: 50px;
     width: 100%;
@@ -54,7 +54,7 @@ body section a {
     align-items: center;
     padding-right: 25px;
 
-    font-size: 200%;
+    font-size: 150%;
 
     text-decoration: none;
     color: #FEFAE0
