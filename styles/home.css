@@ -87,6 +87,7 @@ body {
 
   /* display: flex; */
   display: none;
+  background-color: red;
   
   flex-flow: column wrap;
   justify-content: center;
@@ -115,7 +116,7 @@ body {
   gap: 25px;
 }
 
-.worked>div div {
+.worked>div div div {
   width: 100%;
   aspect-ratio: 1/1;
   max-width: 450px;
@@ -136,19 +137,23 @@ body {
   filter: brightness(50%)
 }
 
-.worked>div:nth-of-type(1)>div:nth-of-type(1) {
+#workedContainer {
+  
+}
+
+#fbhc {
   background-image: url('../imgs/fbhc.png')
 }
 
-.worked>div:nth-of-type(1)>div:nth-of-type(2) {
+#cart {
   background-image: url('../imgs/cart.png')
 }
 
-.worked>div:nth-of-type(2)>div:nth-of-type(1) {
+#fs {
   background-image: url('../imgs/fs.webp')
 }
 
-.worked>div:nth-of-type(2)>div:nth-of-type(2) {
+#peer {
   background-image: url('../imgs/peer.webp')
 }
 
