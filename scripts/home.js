@@ -14,7 +14,7 @@ let p1 = document.querySelector('.body p:nth-of-type(1)')
 let bodyDiv = document.querySelector('.body div')
 let p2 = document.querySelector('.body p:nth-of-type(2)')
 
-let worked = document.querySelector('.worked')
+// let worked = document.querySelector('.worked')
 
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
@@ -62,8 +62,34 @@ async function init() {
 
     await delay(2000)
 
-    worked.style.display = 'flex'
+    // worked.style.display = 'flex'
     trueBody.style.overflowY = 'visible'
 }
 
-init()
+function skipIntro() {
+    evan.style.paddingTop = '40px'
+    evan.style.maxWidth = '250px'
+    yangs.style.maxWidth = '250px'
+    portfolio.style.maxWidth = '250px'
+    intro.style.maxHeight = '415px'
+    // worked.style.display = 'flex'
+    trueBody.style.overflowY = 'visible'
+}
+
+//init()
+skipIntro()
+
+// https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/dropEffect
+
+let img = document.querySelectorAll('.img')
+let fbhc = document.querySelector('#fbhc')
+let cart = document.querySelector('#cart')
+let fs = document.querySelector('#ffsbhc')
+let peer = document.querySelector('#peer')
+
+function moneyShift(x) {
+    for (let i of img) {
+        i.style.transform = `translate(${x}px)`
+    }
+}
+

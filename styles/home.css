@@ -80,80 +80,95 @@ body {
   background-position: center 20%;
 }
 
+@media (width <= 450px) {
+  .body div {
+    background-attachment: scroll;
+    background-size: 200%
+  }
+}
+
 /*  */
 
-.worked {
-  width: 100%;
+ #workedTitle, #hintTitle {
+  padding: 0 25px 0 25px;
 
-  /* display: flex; */
-  display: none;
-  background-color: red;
-  
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
 
-  gap: 50px;
-
-  padding: 0 50px 50px 50px
-}
-
-.worked h1 {
-  margin-top: 50px;
-  max-width: 1000px;
-
-  font-size: 200%;
-  font-family: code;
   text-align: center;
+  font-size: 100%;
+
+  font-family: code;
+  letter-spacing: 5px;
 }
 
-.worked div {
-  width: 100%;
-  max-width: 1000px;
+#workedTitle {
+  margin-top: 50px;
+  font-size: 200%;
+}
+
+#hintTitle {
+  margin: 20px 0 50px 0;
+  color: #BC6C25;
+  opacity: 0;
+}
+
+#hintTitle::before {
+  content: "<-- "
+}
+
+
+#carousel {
+  overflow: hidden;
+
+  position: relative;
+  left: 10vw;
+
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
   gap: 25px;
+  
+  height: 250px;
+  width: 80vw;
+  
+  margin: 50px 0 50px 0
 }
 
-.worked>div div div {
-  width: 100%;
-  aspect-ratio: 1/1;
-  max-width: 450px;
+@media (width >= 1340px) {
+  #carousel {
+    justify-content: center;
+  }
+}
 
+@media (width <= 1340px) {
+  #hintTitle {
+    opacity: 1;
+  }
+}
+
+
+.img {
+  aspect-ratio: 1/1;
+  min-width: 250px;
+  max-width: 250px;
   background-color: white;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+  transition: transform 1s;
+} 
 
-  border-radius: 50px;
-
-  -webkit-box-shadow: 8px 8px 20px -11px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 8px 8px 20px -11px rgba(0, 0, 0, 0.75);
-  box-shadow: 8px 8px 20px -11px rgba(0, 0, 0, 0.75);
-}
-
-.worked > div div:active {
-  filter: brightness(50%)
-}
-
-#workedContainer {
-  
-}
-
-#fbhc {
+.fbhc {
   background-image: url('../imgs/fbhc.png')
 }
 
-#cart {
+.cart {
   background-image: url('../imgs/cart.png')
 }
 
-#fs {
+.fs {
   background-image: url('../imgs/fs.webp')
 }
 
-#peer {
+.peer {
   background-image: url('../imgs/peer.webp')
 }
 
