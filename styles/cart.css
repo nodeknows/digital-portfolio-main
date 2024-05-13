@@ -1,0 +1,12 @@
+body {
+    color: #283618;
+    font-family: megan;
+    overflow-x: hidden;
+}
+
+body>h1 {
+    width: 100%;
+    text-align: center;
+    margin: 100px 0 0 0;
+    font-family: megan;
+}

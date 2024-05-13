@@ -81,15 +81,44 @@ skipIntro()
 
 // https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/dropEffect
 
-let img = document.querySelectorAll('.img')
-let fbhc = document.querySelector('#fbhc')
-let cart = document.querySelector('#cart')
-let fs = document.querySelector('#ffsbhc')
-let peer = document.querySelector('#peer')
+let btns = document.querySelectorAll('.btn')
+let left = document.querySelector('.left')
+let right = document.querySelector('.right')
 
-function moneyShift(x) {
-    for (let i of img) {
-        i.style.transform = `translate(${x}px)`
-    }
+let carousel = document.querySelector('#carousel')
+let img = document.querySelectorAll('.img')
+
+let fbhc = document.querySelector('.fbhc')
+let cart = document.querySelector('.cart')
+let fs = document.querySelector('.fs')
+let peer = document.querySelector('.peer')
+
+left.onclick = function () {
+    carousel.scroll({
+        left: (carousel.scrollLeft - 200),
+        behavior: "smooth",
+    })
 }
 
+right.onclick = function () {
+    carousel.scroll({
+        left: (carousel.scrollLeft + 200),
+        behavior: "smooth",
+    })
+}
+
+fbhc.onclick = function() {
+    window.open('../home/fbhc.html', '_self')
+}
+
+cart.onclick = function() {
+    window.open('../home/cart.html', '_self')
+}
+
+fs.onclick = function() {
+    window.open('../home/fs.html', '_self')
+}
+
+peer.onclick = function() {
+    window.open('../home/peer.html', '_self')
+}
