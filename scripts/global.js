@@ -20,3 +20,8 @@ exit.onclick = function () {
     hamb.style.display = 'flex';
     hamb.setAttribute('transition-style', 'in:wipe:left');
 }
+
+let logo = document.querySelector('#logo')
+logo.onclick = function () {
+    window.open('https://evans-digital-portfolio.netlify.app/home')
+}
