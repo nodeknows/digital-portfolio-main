@@ -4,6 +4,7 @@ body {
     overflow-x: hidden;
 }
 
+
 body>h1 {
     width: 100%;
     text-align: center;
@@ -18,17 +19,50 @@ body>h1 {
     align-items: center;
 }
 
-
 #centerSection p {
-    padding: 0 50px 0 50px;
-    margin: 10px 0 20px 0;
     max-width: 1000px;
+    font-size: 150%;
 }
 
-.main {
+#centerSection > div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+figcaption {
+    font-size: 75%;
+}
+
+.image {
     width: 100%;
-    max-width: 1000px;
-    padding: 0 50px 0 50px;
     max-height: 500px;
     object-fit: cover;
 }
+
+.wide {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.narrow {
+    width: 100%;
+    max-width: 500px;
+}
+
+.top10 {
+    margin-top: 10px;
+}
+
+.btm25 {
+    margin-bottom: 25px;
+}
+
+.lftrght25 {
+    padding: 0 25px 0 25px;
+}
+
+figure {
+    width: 100%;
+}
+

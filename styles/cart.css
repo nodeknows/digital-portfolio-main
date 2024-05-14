@@ -2,11 +2,48 @@ body {
     color: #283618;
     font-family: megan;
     overflow-x: hidden;
+    font-size: 100%;
 }
 
 body>h1 {
     width: 100%;
     text-align: center;
-    margin: 100px 0 0 0;
+    margin: 100px 0 25px 0;
     font-family: megan;
+}
+
+.primary {
+    width: 100vw;
+
+    padding: 0 25px 0 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 5vw;
+
+    margin-bottom: 50px;
+}
+
+.primary p {
+    font-size: 150%;
+    width: 100%;
+    max-width: 450px;
+    word-wrap: break-word;
+
+    display: flex;
+    align-items: center;
+}
+
+.primary figure {
+    width: 100%;
+    max-width: 450px;
+}
+
+.primary img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: 25%;
+    object-fit: cover;
 }
