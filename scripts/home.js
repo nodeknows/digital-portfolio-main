@@ -76,8 +76,8 @@ function skipIntro() {
     trueBody.style.overflowY = 'visible'
 }
 
-//init()
-skipIntro()
+init()
+//skipIntro()
 
 // https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/dropEffect
 
