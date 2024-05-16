@@ -25,7 +25,7 @@ body>h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin: 25px 0 25px 0
 }
 
 #background {
@@ -132,4 +132,10 @@ h5 {
 #achievements div {
     display: flex;
     gap: 25px;
+}
+
+#bottom {
+    width: 100%;
+    height: 10px;
+    background-color: #ffbd59;
 }
