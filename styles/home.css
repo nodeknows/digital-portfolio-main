@@ -118,6 +118,7 @@ body {
   color: #FEFAE0;
   height: 50px;
   width: 100%;
+  max-width: 70px;
   font-size: 200%;
   border-radius: 15px;
   height: 250px;
