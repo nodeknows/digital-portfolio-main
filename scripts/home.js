@@ -76,8 +76,8 @@ function skipIntro() {
     trueBody.style.overflowY = 'visible'
 }
 
-init()
-//skipIntro()
+//init()
+skipIntro()
 
 // https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer/dropEffect
 
@@ -122,3 +122,6 @@ fs.onclick = function() {
 peer.onclick = function() {
     window.open('../home/peer.html', '_self')
 }
+
+left.innerHTML = '<'
+right.innerHTML = '>'

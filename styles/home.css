@@ -117,13 +117,17 @@ body {
   border: none;
   color: #FEFAE0;
   height: 50px;
+  width: 100%;
+  font-size: 200%;
+  border-radius: 15px;
+  height: 250px;
 }
 
 .left {
-  margin-right: 5px;
+  margin: 0 10px 0 10px
 }
 .right {
-  margin-left: 5px;
+  margin: 0 10px 0 10px
 }
 
 .btn:active {
