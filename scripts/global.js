@@ -23,5 +23,5 @@ exit.onclick = function () {
 
 let logo = document.querySelector('#logo')
 logo.onclick = function () {
-    window.open('https://evans-digital-portfolio.netlify.app/home')
+    window.open('../home.html', '_self')
 }
