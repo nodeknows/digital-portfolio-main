@@ -18,12 +18,12 @@
 
 .intro > div > h1 {
     font-family: creation;
-    font-size: 10vmax;
+    font-size: 12vmax;
 }
 
 .intro > h2 {
     font-family: code;
-    font-size: 1vmax ;
+    font-size: 2vmax ;
 
     transition: all 0.5s;
 
