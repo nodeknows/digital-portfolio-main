@@ -81,7 +81,7 @@ body {
     font-size: 150%;
 }
 
-.mobile > #hamburger {
+.mobile>#hamburger {
     height: 50px;
 
     position: absolute;
@@ -95,7 +95,7 @@ body {
     gap: 5px;
 }
 
-.mobile > #hamburger > div {
+.mobile>#hamburger>div {
     width: 35px;
     height: 5px;
     background-color: black;
@@ -110,7 +110,7 @@ body {
     width: 100vw;
     height: 100vh;
     top: 0;
-    
+
     display: none;
     flex-flow: column wrap;
     justify-content: center;
@@ -126,11 +126,12 @@ body {
     text-decoration: none;
 }
 
-#frame a:link, #frame a:visited {
+#frame a:link,
+#frame a:visited {
     color: #FEFAE0;
 }
 
-#frame > #exit {
+#frame>#exit {
     position: absolute;
     top: 0;
     right: 20px;
@@ -140,7 +141,7 @@ body {
     font-family: megan;
 }
 
-#frame > #exit:active {
+#frame>#exit:active {
     color: white;
 }
 
@@ -169,7 +170,7 @@ body {
     }
 }
 
-@media (width >= 650px) {
+@media (width >=650px) {
     .mobile {
         display: none;
     }
