@@ -21,17 +21,27 @@ body>h2 {
 
 
 .imgcontainer {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
+    padding: 0 25px 35px 25px;
 }
 
-.imgcontainer img{
+.imgcontainer img {
     max-width: 750px;
     width: 100%;
     max-height: 500px;
-    object-fit: contain;
-    padding: 0 25px 35px 25px;
+    object-fit: cover;
+    object-position: center bottom;
+    border-radius: 25px;
+}
+
+.imgcontainer figcaption {
+    max-width: 750px;
+    width: 100%;
 }
 
 .paragraphs {
